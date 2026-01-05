@@ -45,4 +45,30 @@ pub fn run() {
     let a1 = [1, 2, 3, 4, 5];
     let a2 = [0; 10];
     println!("{:?} {:?} {} {}", a1, a2, a1[2], a2[3]);
+
+    // let s1 = "Helloこんにちは挨拶";
+    // let s2 = "hello";
+    // println!("Stack address of s1 {:p}", &s1);
+    // println!("Stack address of s2 {:p}", &s2);
+    // println!("Static memory address of s1: {:?}", s1.as_ptr());
+    // println!("Static memory address of s2: {:?}", s2.as_ptr());
+    // println!("Len of s1 is: {}", s1.len());
+    // println!("Len of s2 is: {}", s2.len());
+
+    let mut s1 = String::from("Hello");
+    let mut s2 = String::from("HelloWorld");
+
+    println!("Stack address of s1 {:p}", &s1);
+    println!("Stack address of s2 {:p}", &s2);
+    println!("Heap address of s1 {:?}", s1.as_ptr());
+    println!("Heap address of s2 {:?}", s2.as_ptr());
+    println!("Cap of s1 : {}", s1.capacity());
+    println!("Len of s1 : {}", s1.len());
+    println!("Cap of s2 : {}", s2.capacity());
+    println!("Len of s2 : {}", s2.len());
+    s1.push_str("_new1");
+    s2.push_str("_new2");
+    println!("{} {}", s1, s2)
+
+    
 }
