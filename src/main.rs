@@ -2,7 +2,12 @@
 // mod stack_heap;
 // mod ownership;
 // mod dangling;
-mod generics;
+// mod generics;
+// mod lifetime;
+// mod structs;
+// mod enums;
+// mod traits;
+mod error_handling;
 fn main() {
     // let a = 10;
     // let b = 20;
@@ -11,6 +16,10 @@ fn main() {
     // stack_heap::run();
     // ownership::run();
     // dangling::run();
-
-    generics::run();
+    // generics::run();
+    // lifetime::run();
+    // structs::run();
+    // enums::run();
+    // traits::run();
+    error_handling::run();
 }

@@ -40,8 +40,8 @@ pub fn run() {
     println!("{}", largest(char_list));
     println!("{}", largest(number_list));
 
-    let p1 = Point { x: 1, y: 2 };
-    let p2 = Point { x: 1.0, y: 2.0 };
+    let _p1 = Point { x: 1, y: 2 };
+    let _p2 = Point { x: 1.0, y: 2.0 };
     let p3 = PointAnother { x: 1, y: 2.0 };
     let p4 = PointAnother { x: "Rust", y: 'a' };
     let p5 = p3.mixup(p4);
