@@ -7,7 +7,11 @@
 // mod structs;
 // mod enums;
 // mod traits;
-mod error_handling;
+// mod error_handling;
+mod unit_test;
+mod debug;
+
+extern crate lib_demo;
 fn main() {
     // let a = 10;
     // let b = 20;
@@ -21,5 +25,8 @@ fn main() {
     // structs::run();
     // enums::run();
     // traits::run();
-    error_handling::run();
+    // error_handling::run();
+    // lib_demo::print_random_number();
+
+    debug::run();
 }
